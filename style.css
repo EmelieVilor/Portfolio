@@ -4,7 +4,193 @@
     padding: 0;
 }
 
+:root {
+    --dark: #1E201E;
+    --green: #3C3D37;
+    --lightgreen: #697565;
+    --beige: #ECDFCC;
+
+    font-size: 10px;
+}
+
 body {
-    background-color: rgb(5, 6, 44);
-    color: floralwhite;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+
+}
+
+
+.navbar {
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--beige);
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 50;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 3.5rem;
+    color: var(--beige);
+
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 50;
+    font-size: 2rem;
+    color:var(--lightgreen);
+    line-height: 1.5;
+
+
+}
+
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 50;
+    font-size: 2.5rem;
+    color:var(--beige);
+
+}
+
+h4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 50;
+    font-size: 1.5rem;
+    color:var(--green);
+
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    color:var(--beige); 
+}
+
+#header {
+    background-color: var(--dark);
+    padding: 30px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#headerpicture {
+    width: 30%;
+    clip-path: circle();  
+
+}
+
+#resume-button {
+    width: 20%;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    border: var(--green);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+#contact-button {
+    width: 20%;
+    background-color: var(--lightgreen);
+    color: var(--beige);
+    border: var(--green);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#about {
+    background-color: var(--dark);
+    padding: 30px;
+    height: 100vh;
+}
+
+#work {
+    background-color: var(--dark);
+    padding: 30px;
+    height: 100vh;
+}
+
+#contact {
+    background-color: var(--dark);
+    padding: 30px;
+    height: 100vh;
+}
+
+form {
+    
+}
+
+#femail {
+
+}
+
+#ftext {
+
+}
+
+#fsubmit {
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 20%;
+    background-color: var(--lightgreen);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.logo {
+    font-size: 15px;
+
+}
+
+i {
+    color: var(--beige);
+}
+
+.logo:hover {
+    scale: 110%;
+    cursor: pointer;
 }

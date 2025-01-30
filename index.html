@@ -4,55 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emelie Nilsson Vilör - Portfolio</title>
+    <title>Emelie Vilör - Portfolio</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- meta data -->
-    <meta property="og:title" content="My Awesome Site" />
-    <meta property="og:description" content="Description of my site." />
+    <!-- meta data -->
+    <meta property="og:title" content="Emelie Vilör Portfolio" />
+    <meta property="og:description" content="Web Developer student and Interaction designer." />
     <meta property="og:image" content="http://example.com/image.jpg" />
     <meta property="og:url" content="http://example.com/" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="Portfolio website" />
 
     <!-- SEO data -->
-    <meta name="description" content="Description of my site." />
-    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="description" content="Portfolio website of Emelie Vilör" />
+    <meta name="keywords" content="Portfolio, Frontend development, Webdesign, Interaction Design" />
     <link rel="canonical" href="http://example.com/" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+        <h3>Emelie Vilör</h3>
+
+        <ul class="navlinks">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
     </nav>
 
 
-        <section class="header">
+        <section id="header">
 
-        <h1>Emelie Nilsson Vilör</h1>
-        <h2>Web Developer and UX Designer</h2>
-        <h4>testing github</h4>
+        <img id="headerpicture" src="/images/4.jpg" alt="profilepicture">
+    <div class="intro">
+        <h1>Emelie Vilör</h1>
+        <h2>Frontend Developer and UX Designer</h2>
+        <h4>First year student in web development at Borås Yrkeshögskola with previous education and experience in Interaction Design from Malmö University.</h4>
+        <button id="resume-button">My resume</button>
+        <button id="contact-button">Contact me!</button>
+    </div>
     </section>
 
-    <section class="skills">
+    <section id="about">
+        <h3>About me</h3>
         <h3>Skills</h3>
     </section>
 
-    <section class="projects">
-        <h3>Projects</h3>
+    <section id="work">
+        <h3>Previous work</h3>
+        
+    <div class="project-container">
+        <div class="project">Project 1</div>
+        <div class="project">Project 2</div>
+        <div class="project">Project 3</div>
+        <div class="project">Project 4</div>
+        <div class="project">Project 5</div>
+        <div class="project">Project 6</div>
+    </div>
     </section>
 
 
-    <section class="contact">
+    <section id="contact">
         <h3>Contact Form!</h3>
+<form action="#">
+        <input type="email" id="femail">
+        <input type="text" id="ftext">
+        <input type="submit" id="fsubmit" value="Send message">
+    </form>
     </section>
 
     <footer>
-        <h4>Links to social media</h4>
+        <p>@ Emelie Nilsson Vilör 2025</p>
+
+        <div class="contact-links">
+            <div class ="logo"><i class="fa-brands fa-github"></i></div>
+            <div class ="logo"><i class="fa-brands fa-linkedin"></i></div>
+            <div class ="logo"><i class="fa-brands fa-facebook"></i></div>
+        </div>
     </footer>
 </body>
 </html>
