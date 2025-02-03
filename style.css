@@ -11,6 +11,7 @@
     --beige: #ECDFCC;
 
     font-size: 10px;
+    font-family: "Montserrat";
 }
 
 body {
@@ -53,9 +54,9 @@ a:hover {
 }
 
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'American Typewriter', monospace;
     font-weight: lighter;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     color: var(--beige);
 
 }
@@ -71,7 +72,7 @@ h2 {
 }
 
 h3 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'American Typewriter', monospace;
     font-weight: 50;
     font-size: 2.5rem;
     color:var(--beige);
@@ -89,23 +90,25 @@ h4 {
 p {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
+    text-transform: uppercase;
     color:var(--beige); 
 }
 
 #header {
     background-color: var(--dark);
-    padding: 30px;
+    padding: 50px;
     height: 100vh;
-
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 30px;
+    gap: 50px;
+}
+
+.intro {
 }
 
 #headerpicture {
-    width: 30%;
+    width: 300px;
     clip-path: circle();  
 
 }
@@ -129,6 +132,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     margin-top: 20px;
+    margin-left: 15px;
 }
 
 #about {
@@ -177,7 +181,7 @@ footer {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
 
 }
 
@@ -188,6 +192,12 @@ footer {
 
 i {
     color: var(--beige);
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+#github {
+    color: aqua;
 }
 
 .logo:hover {
